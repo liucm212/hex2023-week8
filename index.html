@@ -2,24 +2,134 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-    <script type="module" crossorigin src="/hex2023-week8/assets/index-1b8f882c.js"></script>
-    <link rel="stylesheet" href="/hex2023-week8/assets/index-044d9998.css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- google icon -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
+    <title>Alphabox+ | 首頁</title>
+    <script type="module" crossorigin src="/hex2023-week8/assets/index-b4997976.js"></script>
+    <link rel="stylesheet" href="/hex2023-week8/assets/index-774c5ee2.css">
   </head>
   <body>
-    <header>
-  <h1>This is header</h1>
-</header>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <button class="btn btn-primary">Bootstrap Button</button>
-
-    <footer>
-  <p>This is footer</p>
-</footer>
+    <div class="header-bg position-sticky top-0 w-100 py-12 py-xl-20">
+  <div class="container">
+    <header class="row justify-content-between align-items-center">
+      <!-- logo -->
+      <div class="col-auto col-xxl-4 order-1">
+        <a href="#" class="font-shrikhand fs-32 text-light me-40">ALPHABOX+</a>
+      </div>
+      <div
+        class="collapse d-xl-block navbar flex-grow-1 position-absolute position-xl-static col-xl-8 order-3 order-xl-2"
+        id="collapseNav"
+      >
+        <!-- dropdown -->
+        <div class="d-xl-flex justify-content-xxl-between">
+          <!-- nav -->
+          <ul
+            class="nav-list d-flex flex-column flex-xl-row gap-8 align-items-xl-center text-white gap-xl-40 me-xl-40 mb-8 mb-xl-0"
+          >
+            <li class="list-item text-center">
+              <a href="#" class="list-link">產品</a>
+            </li>
+            <li class="list-item text-center">
+              <a href="#" class="list-link">關於我們</a>
+            </li>
+            <li class="list-item text-center">
+              <a href="#" class="list-link">最新消息</a>
+            </li>
+            <li class="list-item text-center">
+              <a href="#" class="list-link">FAQ</a>
+            </li>
+            <li class="list-item text-center">
+              <a href="#" class="list-link">聯絡我們</a>
+            </li>
+          </ul>
+          <!-- 登入註冊 -->
+          <ul
+            class="nav-list d-flex flex-column flex-xl-row align-items-xl-center text-white gap-8 gap-xl-24"
+          >
+            <li class="list-item text-center">
+              <a href="#" class="list-link">註冊</a>
+            </li>
+            <li class="list-item text-center">
+              <a href="#" class="list-link">登入</a>
+            </li>
+            <li class="list-item mx-auto d-inline-block">
+              <a
+                href="#"
+                class="list-link d-flex align-items-center bg-light py-8 px-16 rounded"
+              >
+                <img
+                  class="me-4"
+                  src="/hex2023-week8/assets/icon-corss-427f6aa8.svg"
+                  alt="黑色虛線十字圖案，中間是一個圓點。"
+                />
+                <span class="text-dark">訂閱</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-auto d-xl-none order-2 order-xl-3">
+        <!-- 漢堡選單 -->
+        <a
+          href="#"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseNav"
+        >
+          <i
+            class="material-symbols-outlined text-light"
+            style="font-size: 44px"
+          >
+            menu
+          </i>
+        </a>
+      </div>
+    </header>
+  </div>
+</div>
+    <div class="container">
+      <p class="fs-40 text-center" style="height: 1000px">
+        hello my name is andy
+      </p>
+    </div>
+    <div class="container p-40 px-lg-auto py-lg-52">
+  <footer
+    class="d-lg-flex justify-content-lg-between align-items-center position-relative"
+  >
+    <div>
+      <a href="#" class="font-shrikhand fs-32 hover--primary-200">ALPHABOX+</a>
+      <span class="d-none d-lg-block fw-bold"
+        >Copyright &copy; 2023 Hexschool</span
+      >
+    </div>
+    <img
+      class="mx-auto"
+      src="/hex2023-week8/assets/emergency-b2c8e054.svg"
+      alt="黑色米字圖案。"
+    />
+    <ul class="list-nav d-lg-flex gap-24 fw-bold">
+      <li class="list-item">
+        <a href="#" class="list-link hover--primary-200">關於我們</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link hover--primary-200">產品資訊</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link hover--primary-200">常見問題</a>
+      </li>
+      <li class="list-item">
+        <a href="#" class="list-link hover--primary-200">隱私政策</a>
+      </li>
+    </ul>
+    <span class="d-lg-none fw-bold">Copyright &copy; 2023 Hexschool</span>
+  </footer>
+</div>
 
     
   </body>
