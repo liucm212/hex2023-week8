@@ -1,0 +1,9 @@
+// nav list
+.nav-list{
+  .list-item{
+    font-size: 24px;
+    @include xl{
+      font-size: 16px;
+    }
+  }
+}

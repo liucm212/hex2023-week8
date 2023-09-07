@@ -4,10 +4,13 @@
 @import "../../node_modules/bootstrap/scss/functions";
 //# 客製化變數
 @import "./helpers/_variables";
+//# 客製化色彩
+@import './utils/custom-color';
 @import "../../node_modules/bootstrap/scss/variables-dark";
 @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
-@import "../../node_modules/bootstrap/scss/utilities";
+// custom utilities(for font setting by breakpoints)
+@import './utils/bs-util';
 
 // Layout & components
 @import "../../node_modules/bootstrap/scss/root";
@@ -49,11 +52,23 @@
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 
+// helper
+@import './helpers/font-family';
+
+
+// helper/mixins
+@import './helpers/mixins/breakpoint';
+@import './helpers/mixins/bg-gradient';
+@import './helpers/mixins/position';
+
 
 // base settting
+@import './base/reset' ; 
 @import './base/base' ; 
 
+
 // layout
+@import './layout/component';
 @import './layout/header';
 @import './layout/footer';
 

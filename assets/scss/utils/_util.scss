@@ -1,0 +1,21 @@
+// font family
+.font-noto-sans {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.font-shrikhand {
+  font-family: "Shrikhand", cursive;
+}
+
+.font-saira {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+
+// hover
+.hover{
+  &--primary-200{
+    &:hover{
+      color: var(--bs-primary-200);
+    }
+  }
+}

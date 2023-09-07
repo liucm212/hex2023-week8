@@ -1,1 +1,4 @@
 // 網站首頁設定
+.index-title{
+  @include radial-gradient(var(--bs-primary-100), var(--bs-primary-400));
+}

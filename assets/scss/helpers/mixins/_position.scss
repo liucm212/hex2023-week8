@@ -1,0 +1,5 @@
+.position-xl-static {
+  @media (min-width: 1200px) {
+    position: static !important;
+  }
+}

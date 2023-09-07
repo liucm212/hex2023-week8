@@ -1,4 +1,17 @@
-header{
-  line-height: 200px;
-  background-color: greenyellow;
+.header-bg{
+  background-color: var(--bs-primary-200);
+}
+.navbar{ 
+  @include gradient-y(var(--bs-primary-200), var(--bs-primary-500));
+  top: 87.38px;
+  left: 0;
+  min-width: 100vw;
+  padding: 24px 0 32px;
+  @include xl{
+    min-width: auto;
+    padding: 0;
+    border-top: none;
+    background: transparent;
+    background-color: var(--bs-primary-200);
+  }
 }
