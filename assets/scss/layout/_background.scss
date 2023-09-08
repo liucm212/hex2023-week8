@@ -1,0 +1,58 @@
+.bg{ 
+  &-Diane{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true") no-repeat top center / cover;
+  }
+  &-Felix{
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true') no-repeat top center / cover;
+  }
+  &-Felix-vertical{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true") no-repeat top center / cover;;
+  }
+  &-Karina{
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true') no-repeat top center / cover;
+  }
+  &-Karina-vertical{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_vertical.png?raw=true") no-repeat top center / cover;
+  }
+  &-Vito{
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true')
+  }
+  &-Vito-vertical{
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true");
+  }
+}
+
+.bg-mask{
+  position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  &-Diane{
+    &::before{
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true') no-repeat top center / cover;
+    }
+  } 
+  &-Felix{
+    &::before{
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true') no-repeat top center / cover;
+    }
+  } 
+  &-Karina{
+    &::before{
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_vertical.png?raw=true') no-repeat top center / cover;
+    }
+  } 
+  &-Vito{
+    &::before{
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true') no-repeat top center / cover;
+    }
+  } 
+}

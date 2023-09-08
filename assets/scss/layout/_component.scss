@@ -7,3 +7,213 @@
     }
   }
 }
+
+
+// Aiｒ機器人卡片 : card-textAndImg
+.card-textAndImg{
+
+  // 單個卡片項目
+  .card-item{
+
+  }
+
+  // 放背景圖片和調整用
+  .item-body{
+    position: relative;
+    width: 351px;
+    height: 351px;
+    @include lg{
+      height: 580px;
+    }
+  }
+  .item-body--lg{
+    @include lg{
+      height: 676px;
+    }
+  }
+
+  // 文字內容
+  .item-content{
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: "Shrikhand";
+    font-size: 32px;
+    color: var(--bs-light);
+
+  }
+}
+
+// 最新消息卡片
+.card-textAndArrow{
+  //單個卡片
+  .card-item{
+    padding: 32px 16px;
+    @include lg{
+      padding: 40px 16px;
+    }
+  }
+  // 卡片header
+  .item-header{
+    display: flex;
+    margin-bottom: 8px;
+    // header 圖片
+    .header-img{
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+    }
+    // header內容
+    .header-content{
+      letter-spacing: 16px;
+    }
+  }
+  // 卡片內容
+  .item-body{
+    margin-bottom: 12px;
+    // 卡片標題
+    .body-title{
+      font-size: 20px;
+      letter-spacing: 20px;
+      margin-bottom: 12px;
+    }
+    // 卡片內容
+    .body-content{
+
+    }
+  }
+  // 卡片尾巴
+  .item-footer{
+    // footer連結
+    .footer-link{
+      // footer圖片
+      .footer-img{
+
+      }
+    }
+    
+  }
+}
+
+// 使用分享卡片
+.card-textAndDot{
+  // 單個卡片
+  .card-item{
+    width: 351px;
+    height: 351px;
+    padding: 24px;
+    @include lg{
+      width: 416px;
+      height: 416px;
+    }
+  }
+
+  // 卡片表頭
+  .item-header{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    margin-bottom: 32px;
+    // 表頭內容
+    .heaer-content{
+      
+    }
+  }
+  
+
+  // 卡片主體
+  .item-body{
+    //body內容
+    .body-content{
+
+    }
+
+  }
+
+  // 卡片表尾
+  .item-footer{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    // 表尾內容
+    .footer-content{
+
+    }
+  }
+}
+
+
+// 文字之間的點點
+.dot{
+  display: inline-block;
+  border-radius: 50%;
+  &--md{
+    width: 8px;
+    height: 8px;
+  }
+  // 大點點
+  &--lg{
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
+
+// AI機器人類型
+.card-showBg{
+  // 單個卡片
+  .card-item{
+  }
+
+  // 放背景的地方
+  .item-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    min-height: 406px;
+    // 數字
+    .body-number{
+      font-family: "Saira Extra Condensed", sans-serif;
+      font-size: 128px;
+      font-weight: 300;
+      margin-bottom: 16px;
+      @include lg{
+        font-size: 400px;
+      }
+    }
+    // 機器人名稱
+    .body-title{
+      font-family: "Shrikhand";
+      font-size: 24px;
+      margin-bottom: 18px;
+      @include lg{
+        font-size: 32px;
+      }
+    }
+    // 文字介紹
+    .body-content{
+      display: flex;
+      flex-direction: column;
+      font-family: "Noto Sans TC", sans-serif;
+      padding: 0 12px;
+      @include lg{
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+      }
+      // 介紹標題
+      .content-title{
+        font-weight: 700;
+      }
+      // 介紹內容
+      .content-body{
+
+      }
+    }
+  }
+  
+}

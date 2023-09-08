@@ -7,9 +7,201 @@
   <body>
     <%- include('./layout/header'); -%>
     <div class="container">
-      <p class="fs-40 text-center" style="height: 1000px">
-        hello my name is andy
-      </p>
+      <!-- AI機器人卡片 -->
+      <ul class="card-textAndImg">
+        <!-- Diane -->
+        <li class="card-item">
+          <div
+            class="item-body item-body--lg bg-Diane bg-cover bg-top bg-noRepeat"
+          >
+            <span class="item-content">Diane</span>
+          </div>
+        </li>
+        <!-- Felix -->
+        <li class="card-item">
+          <div class="item-body item-body bg-Felix bg-cover bg-top bg-noRepeat">
+            <span class="item-content">Felix</span>
+          </div>
+        </li>
+        <!-- Karina -->
+        <li class="card-item">
+          <div
+            class="item-body item-body bg-Karina bg-cover bg-top bg-noRepeat"
+          >
+            <span class="item-content">Karina</span>
+          </div>
+        </li>
+        <!-- Vito -->
+        <li class="card-item">
+          <div
+            class="item-body item-body--lg bg-Vito bg-cover bg-top bg-noRepeat"
+          >
+            <span class="item-content">Vito</span>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 最新消息卡片 -->
+      <ul class="card-textAndArrow">
+        <!-- 單個卡片-01 -->
+        <li class="card-item text-light bg-dark fw-bold">
+          <div class="item-header">
+            <img
+              class="header-img"
+              src="../assets/images/emergency--white.svg"
+              alt="白色米字圖案。"
+            />
+            <span class="header-content">2023.06.30</span>
+          </div>
+          <div class="item-body">
+            <h3 class="body-title">產品升級公告</h3>
+            <p class="body-content">
+              榮幸地宣布，ALPHABOX+
+              已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！
+            </p>
+          </div>
+          <div class="item-footer">
+            <a href="#" class="footer-link">
+              <img
+                class="footer-img"
+                src="../assets/images/long-arrow--white.png"
+                alt="白色長箭頭，指向右邊。"
+              />
+            </a>
+          </div>
+        </li>
+
+        <!-- 單個卡片-02 -->
+        <li class="card-item text-light bg-dark fw-bold">
+          <div class="item-header">
+            <img
+              class="header-img"
+              src="../assets/images/emergency--white.svg"
+              alt="白色米字圖案。"
+            />
+            <span class="header-content">2023.06.30</span>
+          </div>
+          <div class="item-body">
+            <h3 class="body-title">限時優惠活動</h3>
+            <p class="body-content">
+              為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+
+              的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！
+            </p>
+          </div>
+          <div class="item-footer">
+            <a href="#" class="footer-link">
+              <img
+                class="footer-img"
+                src="../assets/images/short-arrow--white.png"
+                alt="白色短箭頭，指向右邊。"
+              />
+            </a>
+          </div>
+        </li>
+
+        <!-- 單個卡片-03 -->
+        <li class="card-item text-light bg-dark fw-bold">
+          <div class="item-header">
+            <img
+              class="header-img"
+              src="../assets/images/emergency--white.svg"
+              alt="白色米字圖案。"
+            />
+            <span class="header-content">2023.04.18</span>
+          </div>
+          <div class="item-body">
+            <h3 class="body-title">新功能上線</h3>
+            <p class="body-content">
+              為使您的 ALPHABOX+
+              更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。
+            </p>
+          </div>
+          <div class="item-footer">
+            <a href="#" class="footer-link">
+              <img
+                class="footer-img"
+                src="../assets/images/long-arrow--white.png"
+                alt="白色長箭頭，指向右邊。"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 使用分享卡片 -->
+      <ul class="card-textAndDot d-flex">
+        <!-- 單個分享卡片-01 -->
+        <li class="card-item bg-primary-200 text-white fw-bold font-noto-sans">
+          <!-- 表頭資訊 -->
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="item-header">
+                <span class="header-content">Zona</span>
+                <span class="dot dot--md bg-light"></span>
+                <span class="header-content">Taipei</span>
+              </div>
+              <div class="item-body">
+                <p class="body-content">
+                  ALPHABOX+
+                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                </p>
+              </div>
+            </div>
+            <div class="item-footer">
+              <span class="dot dot--lg bg-light"></span>
+              <span class="dot dot--lg bg-light"></span>
+              <span class="footer-content">ALPHABOX+ Diane</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- 單個分享卡片-02 -->
+        <li class="card-item bg-primary-200 text-dark fw-bold font-noto-sans">
+          <!-- 表頭資訊 -->
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div>
+              <div class="item-header">
+                <span class="header-content">Zona</span>
+                <span class="dot dot--md bg-dark"></span>
+                <span class="header-content">Taipei</span>
+              </div>
+              <div class="item-body">
+                <p class="body-content">
+                  ALPHABOX+
+                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                </p>
+              </div>
+            </div>
+            <div class="item-footer">
+              <span class="dot dot--lg bg-dark"></span>
+              <span class="dot dot--lg bg-dark"></span>
+              <span class="footer-content">ALPHABOX+ Diane</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- AI機器人類型 -->
+      <ul class="card-showBg d-flex">
+        <li class="card-item text-light mask-dark">
+          <a href="#" class="item-link">
+            <div class="item-body mask-dark bg-mask bg-mask-Diane">
+              <span class="body-number">1</span>
+              <span class="body-title">Diane</span>
+              <div class="body-content">
+                <div class="d-flex flex-column">
+                  <span class="content-title">知識型</span>
+                  <span class="content-body">學術領導/知識分享/智能問答</span>
+                </div>
+                <img
+                  src="../assets/images/short-arrow--white.png"
+                  alt="白色短箭頭，指向右邊。"
+                />
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
     <%- include('./layout/footer'); -%>
 

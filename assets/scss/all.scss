@@ -68,9 +68,10 @@
 
 
 // layout
-@import './layout/component';
 @import './layout/header';
 @import './layout/footer';
+@import './layout/component';
+@import './layout/background';
 
 // utils
 @import './utils/util';
