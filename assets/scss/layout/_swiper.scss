@@ -1,0 +1,30 @@
+.swiper-banner{
+  // 左右icon
+  .swiper-icon{
+      font-size: 48px;
+      color: var(--bs-light);
+      @include xl{
+        font-size: 80px;
+      }
+  }
+  .swiper-button-next{
+    padding-right: 12px;
+    @include xl{
+      padding-right: 48px;
+    }
+    &::after{
+      content: '';
+      display: none;
+    }
+  }
+  .swiper-button-prev{
+    padding-left: 12px;
+    @include xl{
+      padding-left: 48px;
+    }
+    &::after{
+      content: '';
+      display: none;
+    }
+  }
+}

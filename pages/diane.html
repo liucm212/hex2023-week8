@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('./layout/meta'); -%>
+    <title>Alphabox+ | Diane</title>
+  </head>
+  <body>
+    <!-- header -->
+    <%- include('./layout/header'); -%>
+    <!-- 最上方的button: button-primary -->
+    <div class="bg-dark py-16">
+      <div class="container">
+        <ul
+          class="d-flex justify-content-center align-items-center gap-8 gap-xl-24"
+        >
+          <li class="button-primary">
+            <a href="#" class="button-link">Diane</a>
+          </li>
+          <li class="button-primary">
+            <a href="#" class="button-link active">Felix</a>
+          </li>
+          <li class="button-primary">
+            <a href="#" class="button-link">Karina</a>
+          </li>
+          <li class="button-primary">
+            <a href="#" class="button-link">Vito</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- banner -->
+    <div class="bg-dark">
+      <div class="banner">
+        <div class="banner-top">
+          <!-- swiper -->
+          <!-- Slider main container -->
+          <div class="swiper swiper-banner">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true"
+                  alt="diane看向鏡頭。"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square2.png?raw=true"
+                  alt="diane側看鏡頭。"
+                />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">
+              <span class="swiper-icon material-symbols-outlined">
+                arrow_circle_left
+              </span>
+            </div>
+            <div class="swiper-button-next">
+              <span class="swiper-icon material-symbols-outlined">
+                arrow_circle_right
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="banner-mid">
+          <!-- banner介紹文字 -->
+          <div class="d-flex flex-column text-light mb-8 mb-xl-16">
+            <span class="font-shrikhand fs-40 fs-xl-64 mb-xl-24">Diane</span>
+            <span class="fs-xl-22 fw-bold">知識型</span>
+            <span class="mb-8">學術領導/知識分享/智能問答</span>
+          </div>
+          <img
+            src="../assets/images/long-arrow--white.png"
+            alt="白色長箭頭，指向右邊。"
+          />
+        </div>
+        <div class="banner-down text-center">
+          <!-- 指向下面的文字圓圈 -->
+          <span class="circle">
+            <img
+              class="item-outer"
+              src="../assets/images/circle-seeMore.png"
+              alt="白色文字組成的圈圈"
+            />
+            <span class="item-inner material-symbols-outlined text-light fs-40">
+              arrow_downward
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="container">
+      <!-- 學術領導/知識分享/智能問答 下方的介紹卡片 -->
+      <ul class="card-textUpAndDown row">
+        <li class="card-item col-md-6 col-xl-4">
+          <h3 class="item-title">先進的3D投影技術</h3>
+          <p class="item-content">
+            Diane 搭載了最新的 3D
+            投影技術，能夠將虛擬影像清晰地呈現在您的現實空間中，讓您感受身臨其境的體驗！
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- footer -->
+    <%- include('./layout/footer'); -%>
+
+    <!-- main.js -->
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

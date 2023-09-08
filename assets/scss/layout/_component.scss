@@ -39,7 +39,7 @@
     left: 0;
     right: 0;
     text-align: center;
-    font-family: "Shrikhand";
+    font-family: "Shrikhand", cursive;
     font-size: 32px;
     color: var(--bs-light);
 
@@ -187,7 +187,7 @@
     }
     // 機器人名稱
     .body-title{
-      font-family: "Shrikhand";
+      font-family: "Shrikhand", cursive;
       font-size: 24px;
       margin-bottom: 18px;
       @include lg{
@@ -214,6 +214,110 @@
 
       }
     }
+  } 
+}
+
+
+// 學術領導/知識分享/智能問答 下方的介紹卡片
+.card-textUpAndDown{
+  // 單個卡片
+  .card-item{
+
   }
-  
+  // 卡片標題
+  .item-title{
+    font-weight: 700;
+    border-bottom: 2px solid var(--bs-dark);
+    line-height: 1;
+    margin-bottom: 16px;
+    @include xl{
+      border-bottom: none;
+      margin-bottom: 24px;
+    }
+  }
+  // 卡片內容
+  .item-content{
+
+  }
+}
+
+
+
+
+
+
+// 最上方的button: button-primary
+.button-primary{
+  .button-link{
+    font-family: "Shrikhand", cursive;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bs-light);
+    border-radius: 40px;
+    color: var(--bs-light);
+    background-color: var(--bs-dark);
+    padding: 4px 16px;
+    transition: 0.1s;
+    &:hover{
+      color: var(--bs-dark);
+      background-color: var(--bs-light);
+      border-color: var(--bs-dark);
+    }
+    @include xl{
+      font-size: 24px;
+      padding: 4px 80px;
+    }
+  }
+  .active{
+    color: var(--bs-dark);
+    background-color: var(--bs-light);
+    border-color: var(--bs-dark);
+  }
+}
+
+
+// banner section
+.banner{
+  @include xl{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .banner-top{
+    @include xl{
+      width: 50%;
+    }
+  }
+  .banner-mid{
+    padding: 16px 12px;
+    @include xl{
+      padding: 16px 0 16px 40px;
+      width: 50%;
+    }
+  }
+  .banner-down{
+    padding-bottom: 24px;
+    @include xl{
+      padding-bottom: 0;
+    }
+  }
+}
+
+
+// 圈圈文字圖案裡面有其他圖案的架構
+.circle{
+  position: relative;
+  z-index: 2;
+  @include xl{
+    position: absolute;
+    transform: translate(-50%, 0%);
+    bottom: 60px;
+    left: 50%;
+  }
+  .item-inner{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
 }
