@@ -1,4 +1,22 @@
 // 網站首頁設定
-.index-title{
-  @include radial-gradient(var(--bs-primary-100), var(--bs-primary-400));
+// .index-title{
+//   @include radial-gradient(var(--bs-primary-100), var(--bs-primary-400));
+// }
+
+
+
+
+
+// 首頁大區域
+.home{
+  background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/home_background.png?raw=true') no-repeat top center / cover;
+  margin-bottom: -104px;
+}
+
+
+// 機器人背景
+.bg-robot{
+  background-image: url('../images/robot.png') , radial-gradient(50% 50% at 50% 50%,#300871 0%,#000000 100%);
+  background-repeat: no-repeat;
+  z-index: -1;
 }

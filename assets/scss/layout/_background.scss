@@ -1,23 +1,35 @@
 .bg{ 
   &-Diane{
-    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true") no-repeat top center / cover;
+    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_square1.png?raw=true") no-repeat top center / cover;
   }
   &-Felix{
-    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true') no-repeat top center / cover;
-  }
-  &-Felix-vertical{
-    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true") no-repeat top center / cover;;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_square1.png?raw=true') no-repeat top center / cover;
   }
   &-Karina{
-    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true') no-repeat top center / cover;
-  }
-  &-Karina-vertical{
-    background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_vertical.png?raw=true") no-repeat top center / cover;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_square1.png?raw=true') no-repeat top center / cover;
   }
   &-Vito{
-    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true') no-repeat top center / cover;
+    background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_square1.png?raw=true') no-repeat top center / cover;
   }
 }
+
+.bg-lg{ 
+  @include lg{
+    &-Diane{
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true") no-repeat top center / cover;
+    }
+    &-Felix{
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true") no-repeat top center / cover;;
+    }
+    &-Karina{
+      background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true") no-repeat top center / cover;
+    }
+    &-Vito{
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true') no-repeat top center / cover;
+    }
+  }
+}
+
 
 .bg-mask{
   position: relative;
@@ -34,22 +46,22 @@
     }
   &-Diane{
     &::before{
-      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane_vertical.png?raw=true') no-repeat top center / cover;
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/diane.png?raw=true') no-repeat top center / cover;
     }
   } 
   &-Felix{
     &::before{
-      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix_vertical.png?raw=true') no-repeat top center / cover;
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/felix.png?raw=true') no-repeat top center / cover;
     }
   } 
   &-Karina{
     &::before{
-      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina_vertical.png?raw=true') no-repeat top center / cover;
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/karina.png?raw=true') no-repeat top center / cover;
     }
   } 
   &-Vito{
     &::before{
-      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito_vertical.png?raw=true') no-repeat top center / cover;
+      background: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/vito.png?raw=true') no-repeat top center / cover;
     }
   } 
 }

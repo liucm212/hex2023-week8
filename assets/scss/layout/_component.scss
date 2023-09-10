@@ -8,22 +8,46 @@
   }
 }
 
+// 每個開頭的title
+.section-title{
+  color: var(--bs-light);
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  font-family: "Noto Sans TC", sans-serif;
+  @include lg{
+    font-size: 48px;
+    letter-spacing: 48px;
+  }
+}
+
 
 // Aiｒ機器人卡片 : card-textAndImg
 .card-textAndImg{
 
   // 單個卡片項目
   .card-item{
-
+    @include lg{
+      width: 100%;
+      height: 100%;
+    }
+    
   }
 
   // 放背景圖片和調整用
   .item-body{
     position: relative;
-    width: 351px;
-    height: 351px;
+    min-height: 351px;
+    &:hover{
+      box-shadow: 0 0 2px 2px var(--bs-primary-100);
+    }
+    @include sm{
+      min-height: 650px;
+    }
     @include lg{
-      height: 580px;
+      max-width: none;
+      height: 100%;
+      min-height: 550px;
     }
   }
   .item-body--lg{
@@ -42,7 +66,6 @@
     font-family: "Shrikhand", cursive;
     font-size: 32px;
     color: var(--bs-light);
-
   }
 }
 
@@ -51,6 +74,7 @@
   //單個卡片
   .card-item{
     padding: 32px 16px;
+    border-bottom: 1px solid var(--bs-light);
     @include lg{
       padding: 40px 16px;
     }
@@ -101,11 +125,10 @@
 .card-textAndDot{
   // 單個卡片
   .card-item{
-    max-width: 351px;
     height: 351px;
     padding: 24px;
     @include lg{
-      max-width: 416px;
+      width: 416px;
       height: 416px;
     }
   }
@@ -144,14 +167,36 @@
   }
 }
 
+// share-card
+.share-item{
+  min-height: 351px;
+  @include lg{
+    height: 416px;
+    max-width: 416px;
+  }
+  .share-title{
+
+  }
+  .share-content{
+
+  }
+  .share-footer{
+
+  }
+}
+
 
 // 文字之間的點點
 .dot{
   display: inline-block;
   border-radius: 50%;
-  &--md{
+  &--sm{
     width: 8px;
     height: 8px;
+  }
+  &--md{
+    width: 12px;
+    height: 12px;
   }
   // 大點點
   &--lg{
@@ -175,6 +220,7 @@
     align-items: center;
     padding: 24px 0;
     min-height: 406px;
+    border-right: 1px solid var(--bs-light);
     // 數字
     .body-number{
       font-family: "Saira Extra Condensed", sans-serif;
@@ -222,7 +268,6 @@
 .card-textUpAndDown{
   // 單個卡片
   .card-item{
-
   }
   // 卡片標題
   .item-title{
@@ -312,16 +357,28 @@
 .circle{
   position: relative;
   z-index: 2;
+  .item-inner{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+.circle--move{
   @include xl{
     position: absolute;
     transform: translate(-50%, 0%);
     bottom: 60px;
     left: 50%;
   }
-  .item-inner{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+}
+
+
+// 水平槓槓
+.horizental-bar{
+  height: 40px;
+  @include gradient-x(var(--bs-primary-200),var(--bs-primary-500));
+  &-reverse{
+    @include gradient-x(var(--bs-primary-500),var(--bs-primary-200));
   }
 }
