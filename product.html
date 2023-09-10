@@ -10,9 +10,9 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/icon?family=Material+Icons"
 />
-    <title>Alphabox+ | Diane</title>
-    <script type="module" crossorigin src="/hex2023-week8/assets/aos-83188046.js"></script>
-    <link rel="stylesheet" href="/hex2023-week8/assets/aos-ea0904c3.css">
+    <title>Alphabox+ | 產品 : Diane</title>
+    <script type="module" crossorigin src="/hex2023-week8/assets/aos-9caeafb4.js"></script>
+    <link rel="stylesheet" href="/hex2023-week8/assets/aos-b7687bce.css">
   </head>
   <body>
     <!-- header -->
@@ -21,7 +21,9 @@
     <header class="row gx-0 justify-content-between align-items-center">
       <!-- logo -->
       <div class="col-auto col-lg-3 col-xl-4 order-1">
-        <a href="#" class="font-shrikhand fs-32 text-light me-40">ALPHABOX+</a>
+        <a href="index.html" class="font-shrikhand fs-32 text-light me-40"
+          >ALPHABOX+</a
+        >
       </div>
       <div
         class="collapse d-xl-block navbar flex-grow-1 position-absolute position-xl-static col-lg-9 col-xl-8 order-3 order-xl-2"
@@ -34,7 +36,7 @@
             class="nav-list d-flex flex-column flex-xl-row gap-8 align-items-xl-center text-white gap-xl-40 me-xl-40 mb-8 mb-xl-0"
           >
             <li class="list-item text-center">
-              <a href="#" class="list-link hover--dark">產品</a>
+              <a href="product.html" class="list-link hover--dark">產品</a>
             </li>
             <li class="list-item text-center">
               <a href="#" class="list-link hover--dark">關於我們</a>
@@ -104,7 +106,7 @@
             <a href="#" class="button-link">Diane</a>
           </li>
           <li class="button-primary">
-            <a href="#" class="button-link active">Felix</a>
+            <a href="#" class="button-link active">Diane</a>
           </li>
           <li class="button-primary">
             <a href="#" class="button-link">Karina</a>
@@ -154,11 +156,17 @@
         <div class="banner-mid">
           <!-- banner介紹文字 -->
           <div class="d-flex flex-column text-light mb-8 mb-xl-16">
-            <span class="font-shrikhand fs-40 fs-xl-64 mb-xl-24">Diane</span>
+            <h1 class="font-shrikhand fs-40 fs-xl-64 mb-xl-24">Diane</h1>
             <span class="fs-xl-22 fw-bold">知識型</span>
             <span class="mb-8">學術領導/知識分享/智能問答</span>
           </div>
           <img
+            class="d-xl-none"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAAAYCAYAAAB6OOplAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACrSURBVHgB7ddBDcJAEIXhtyioBKQgAQlIqANAATgAJ0hAQusACcNs2ISyCYcmM7f/S+bQQy8vL7uzEgAAwFpmdvDZCrlqyD5TDVzI5SFf7eNJuxN5uIPPy76OQg4Pd7RfE+1O0sLtXfrAy+IHEyLNPudSyr1+bIRMsxDjz9FRN5JBiNEeLv1luBPiLB4t1ta8kxDPg721kB+sdElam2uLRyGPB7ynxQAArPQGzjDL4b6ti+EAAAAASUVORK5CYII="
+            alt="白色短箭頭，指向右邊。"
+          />
+          <img
+            class="d-none d-xl-block"
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATIAAAAOCAYAAACsCZCnAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEFSURBVHgB7dr/jQFRFMXx+zZbwJaghC3BdqCDVYIOUAEdKAEVjA7ogA7o4Do38xIEIcH8SL6f5BCZxJ835755ZgBQEXf/sQ/4MgCozkDDrFD6SscAoI00wHrK3ktrZaJ0DQDaJNqYsvVL8XuW29pHVlAAeKs8zAq/L57FKvprANBkGlQjf2yb21r31n+keGgAUK+e8uw6eVBWyjK+U0q7GGRuANA+MdA2yvhbH38GAPWJJjaz5xrZzsomtlA2amMHA4A6xUG+X7+95NAfQDtoMP376T7Zub1zDQNA02lADW+8lZw6F2MBNF00LGWeW1eRV8aOvSgZAFQgr4l9Kw/sV+88qD8COJA2Pa9qeuwAAAAASUVORK5CYII="
             alt="白色長箭頭，指向右邊。"
           />
@@ -180,17 +188,173 @@
     </div>
 
     <!-- main -->
-    <div class="container">
-      <!-- 學術領導/知識分享/智能問答 下方的介紹卡片 -->
-      <ul class="card-textUpAndDown row">
-        <li class="card-item col-md-6 col-xl-4">
-          <h3 class="item-title">先進的3D投影技術</h3>
-          <p class="item-content">
-            Diane 搭載了最新的 3D
-            投影技術，能夠將虛擬影像清晰地呈現在您的現實空間中，讓您感受身臨其境的體驗！
-          </p>
-        </li>
-      </ul>
+
+    <!-- 學術領導/知識分享/智能問答 -->
+    <div class="bg-light pt-60 pb-80">
+      <div class="container">
+        <!-- title -->
+        <div
+          class="d-lg-flex justify-content-lg-between align-items-lg-center mb-24 mb-lg-32 fs-20 fw-500"
+        >
+          <div class="d-flex align-items-center">
+            <img
+              class="me-12"
+              src="/hex2023-week8/assets/emergency--dark-b2c8e054.svg"
+              alt="黑色米字圖案。"
+              width="40"
+              height="40"
+            />
+            <h2>學術領導/知識分享/智能問答</h2>
+          </div>
+          <span class="d-none d-lg-block">ALPHABOX+</span>
+        </div>
+        <!-- title intro -->
+        <p class="fw-500 mb-32 mb-lg-120">
+          歡迎來到ALPHABOX+的全新世界！在這裡，我們很榮幸地向您介紹我們的最新力作
+          - 3D立體投影機器人 Diane！
+        </p>
+
+        <!-- card-list : 介紹卡 -->
+        <ul class="card-textUpAndDown row gy-24 gy-lg-104">
+          <!-- card-01 -->
+          <li class="card-item col-md-6 col-xl-4">
+            <h3 class="item-title">先進的3D投影技術</h3>
+            <p class="item-content">
+              Diane 搭載了最新的 3D
+              投影技術，能夠將虛擬影像清晰地呈現在您的現實空間中，讓您感受身臨其境的體驗！
+            </p>
+          </li>
+
+          <!-- card-02 -->
+          <li class="card-item col-md-6 col-xl-4">
+            <h3 class="item-title">人性化的互動設計</h3>
+            <p class="item-content">
+              Diane 具有高度智能的語音辨識和回應功能，您可以像跟朋友聊天一樣，與
+              Diane 進行自然、流暢的對話。
+            </p>
+          </li>
+
+          <!-- card-03 -->
+          <li class="card-item col-md-6 col-xl-4">
+            <h3 class="item-title">豐富的應用場景</h3>
+            <p class="item-content">
+              無論是家庭娛樂、教育培訓還是商業展示，Diane
+              都能夠輕鬆滿足您的需求，為您提供更多元的互動體驗。
+            </p>
+          </li>
+
+          <!-- card-04 -->
+          <li class="card-item col-md-6 col-xl-4">
+            <h3 class="item-title">高度自主性</h3>
+            <p class="item-content">
+              Diane
+              具有強大的自主學習能力，能夠不斷地學習並優化自己，為您創造更加便捷、貼心的生活方式。
+            </p>
+          </li>
+
+          <!-- card-05 -->
+          <li class="card-item col-md-6 col-xl-4">
+            <h3 class="item-title">簡單易用的操作界面</h3>
+            <p class="item-content">
+              Diane 擁有直觀的操作界面，讓您可以輕鬆地掌握並運用它的各種功能。
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-radial text-light pt-60 pb-80 pt-lg-160 pb-lg-216">
+      <!-- 使用分享 -->
+      <div class="container">
+        <!-- title -->
+        <h2 class="fs-40 mb-16 mb-lg-12 fw-bold">使用分享</h2>
+
+        <!-- title intro -->
+        <p class="mb-24 mb-lg-80">
+          展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。
+        </p>
+
+        <!-- list card : 使用分享卡片 -->
+        <ul
+          class="card-textAndDot d-flex flex-column flex-lg-row flex-xxl-wrap gap-24 align-items-center align-items-lg-start justify-content-xl-between mx-lg-auto"
+        >
+          <!-- 單個分享卡片-01 -->
+          <li
+            class="card-item bg-primary-300 text-white fw-bold font-noto-sans"
+          >
+            <!-- 表頭資訊 -->
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="item-header">
+                  <span class="header-content">Zichi</span>
+                  <span class="dot dot--md bg-light"></span>
+                  <span class="header-content">Kaohsiung</span>
+                </div>
+                <div class="item-body">
+                  <p class="body-content">
+                    自從家裡有了Diane，孩子們的學習興趣提高了不少，他們都喜歡透過Diane的3D立體投影來探索新知識，家庭氛圍變得更加和樂融融！
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <span class="dot dot--lg bg-light"></span>
+                <span class="dot dot--lg bg-light"></span>
+                <span class="footer-content">ALPHABOX+ Diane</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 單個分享卡片-02 -->
+          <li class="card-item bg-primary-300 text-dark fw-bold font-noto-sans">
+            <!-- 表頭資訊 -->
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="item-header">
+                  <span class="header-content">Lee</span>
+                  <span class="dot dot--md bg-dark"></span>
+                  <span class="header-content">Chiayi</span>
+                </div>
+                <div class="item-body">
+                  <p class="body-content">
+                    自從公司引入 Diane，員工的工作效率提升了很多。Diane
+                    不僅能快速回應我們的需求，還可以協助我們做各種商業展示，真的是企業的好幫手！
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <span class="dot dot--lg bg-dark"></span>
+                <span class="dot dot--lg bg-dark"></span>
+                <span class="footer-content">ALPHABOX+ Diane</span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 單個分享卡片-03 -->
+          <li class="card-item bg-primary-300 fw-bold font-noto-sans">
+            <!-- 表頭資訊 -->
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="item-header">
+                  <span class="header-content">瑞</span>
+                  <span class="dot dot--md bg-light"></span>
+                  <span class="header-content">Taipei</span>
+                </div>
+                <div class="item-body">
+                  <p class="body-content">
+                    Diane
+                    讓教學變得更生動有趣，學生們在課堂上的參與度和學習效果都有顯著提升。我非常推薦Diane給所有的教育工作者！
+                  </p>
+                </div>
+              </div>
+              <div class="item-footer">
+                <span class="dot dot--lg bg-light"></span>
+                <span class="dot dot--lg bg-light"></span>
+                <span class="footer-content">ALPHABOX+ Diane</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- footer -->
@@ -199,7 +363,9 @@
     class="d-lg-flex justify-content-lg-between align-items-center position-relative"
   >
     <div>
-      <a href="#" class="font-shrikhand fs-32 hover--primary-200">ALPHABOX+</a>
+      <a href="index.html" class="font-shrikhand fs-32 hover--primary-200"
+        >ALPHABOX+</a
+      >
       <span class="d-none d-lg-block fw-bold"
         >Copyright &copy; 2023 Hexschool</span
       >
@@ -214,7 +380,7 @@
         <a href="#" class="list-link hover--primary-200">關於我們</a>
       </li>
       <li class="list-item">
-        <a href="#" class="list-link hover--primary-200">產品資訊</a>
+        <a href="product.html" class="list-link hover--primary-200">產品資訊</a>
       </li>
       <li class="list-item">
         <a href="#" class="list-link hover--primary-200">常見問題</a>
