@@ -3,6 +3,13 @@
   z-index: 10;
 }
 
+// bg-radial
+.bg{
+  &-radial{
+    @include radial-gradient(#28085C, #000000)
+  }
+}
+
 // font family
 .font-noto-sans {
   font-family: "Noto Sans TC", sans-serif;
@@ -65,5 +72,12 @@
     //   width: 100%;
     //   background: var(--bs-dark);
     // }
+  }
+}
+
+// 額外的font weight
+.fw{
+  &-500{
+    font-weight: 500;
   }
 }

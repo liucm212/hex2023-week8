@@ -101,11 +101,11 @@
 .card-textAndDot{
   // 單個卡片
   .card-item{
-    width: 351px;
+    max-width: 351px;
     height: 351px;
     padding: 24px;
     @include lg{
-      width: 416px;
+      max-width: 416px;
       height: 416px;
     }
   }
@@ -290,6 +290,10 @@
   }
   .banner-mid{
     padding: 16px 12px;
+    @include md{
+      padding: 24px 0 24px 40px;
+      width: 50%;
+    }
     @include xl{
       padding: 16px 0 16px 40px;
       width: 50%;
