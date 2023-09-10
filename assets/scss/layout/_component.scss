@@ -103,69 +103,9 @@
       letter-spacing: 20px;
       margin-bottom: 12px;
     }
-    // 卡片內容
-    .body-content{
-
-    }
-  }
-  // 卡片尾巴
-  .item-footer{
-    // footer連結
-    .footer-link{
-      // footer圖片
-      .footer-img{
-
-      }
-    }
-    
   }
 }
 
-// 使用分享卡片
-.card-textAndDot{
-  // 單個卡片
-  .card-item{
-    height: 351px;
-    padding: 24px;
-    @include lg{
-      width: 416px;
-      height: 416px;
-    }
-  }
-
-  // 卡片表頭
-  .item-header{
-    display: flex;
-    column-gap: 8px;
-    align-items: center;
-    margin-bottom: 32px;
-    // 表頭內容
-    .heaer-content{
-      
-    }
-  }
-  
-
-  // 卡片主體
-  .item-body{
-    //body內容
-    .body-content{
-
-    }
-
-  }
-
-  // 卡片表尾
-  .item-footer{
-    display: flex;
-    align-items: center;
-    column-gap: 16px;
-    // 表尾內容
-    .footer-content{
-
-    }
-  }
-}
 
 // share-card
 .share-item{
@@ -173,15 +113,6 @@
   @include lg{
     height: 416px;
     max-width: 416px;
-  }
-  .share-title{
-
-  }
-  .share-content{
-
-  }
-  .share-footer{
-
   }
 }
 
@@ -209,9 +140,6 @@
 
 // AI機器人類型
 .card-showBg{
-  // 單個卡片
-  .card-item{
-  }
 
   // 放背景的地方
   .item-body{
@@ -255,10 +183,6 @@
       .content-title{
         font-weight: 700;
       }
-      // 介紹內容
-      .content-body{
-
-      }
     }
   } 
 }
@@ -266,9 +190,6 @@
 
 // 學術領導/知識分享/智能問答 下方的介紹卡片
 .card-textUpAndDown{
-  // 單個卡片
-  .card-item{
-  }
   // 卡片標題
   .item-title{
     font-weight: 700;
@@ -279,10 +200,6 @@
       border-bottom: none;
       margin-bottom: 24px;
     }
-  }
-  // 卡片內容
-  .item-content{
-
   }
 }
 
